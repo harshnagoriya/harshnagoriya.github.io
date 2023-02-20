@@ -505,7 +505,6 @@ section {
 }
 
 .skills-box {
-  padding: -10px;
   width: 100px;
   height: auto;
   display: flex;
@@ -549,6 +548,12 @@ section {
 
 .skills-box:hover a {
   color: #8b8a8f;
+}
+
+@media (min-width: 992px) {
+  #hero {
+    padding-left: 160px;
+  }
 }
 
 /*--------------------------------------------------------------
