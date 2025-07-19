@@ -5,60 +5,81 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Harsh Nagoriya | Software Engineer Portfolio</title>
-    <meta name="description" content="A highly motivated and detail-oriented software engineer with over 1.5 years of experience in developing cloud, Java, and Android applications, bringing expertise in leveraging cloud technologies for scalable solutions and creating efficient and user-friendly software for diverse platforms. Thrives in dynamic environments and remains committed to staying at the forefront of technology trends to drive success in software development.">
-    <meta name="keywords" content="software engineer, web developer, Java applications, Android development, cloud computing, SQL queries, portfolio, resume, online presence">
+    <meta name="description"
+        content="A highly motivated and detail-oriented Software Development Engineer with expertise in cloud computing, microservices architecture, and serverless applications. Experienced in developing scalable solutions, optimizing system performance, and building data-driven applications that deliver actionable insights.">
+    <meta name="keywords"
+        content="software engineer, web developer, Java applications, Android development, cloud computing, SQL queries, portfolio, resume, online presence">
     <meta content="Harsh Nagoriya" name="author">
     <link href="assets/img/photo_for_icon.png" rel="icon">
     <link href="assets/img/photo_for_icon.png" rel="apple-touch-icon">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#232f3e">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Amazon Ember';
+            src: url('https://m.media-amazon.com/images/G/01/AmazonUI/fonts/amazon-ember/AmazonEmber_W_Rg.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Amazon Ember';
+            src: url('https://m.media-amazon.com/images/G/01/AmazonUI/fonts/amazon-ember/AmazonEmber_W_Bd.woff2') format('woff2');
+            font-weight: bold;
+            font-style: normal;
+        }
+    </style>
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/vendor/font-mfizz/font-mfizz.css">
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <!-- Removed unused venobox CSS -->
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/aws-theme.css" rel="stylesheet">
+    <link href="assets/css/aws-components.css" rel="stylesheet">
+    <link href="assets/css/color-fixes.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- ======= Mobile nav toggle button ======= -->
-    <button type="button" class="mobile-nav-toggle d-xl-none"><i
-                class="icofont-navigation-menu"></i></button>
+    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bx bx-menu"></i></button>
 
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex flex-column justify-content-center">
         <nav class="nav-menu">
             <ul>
-                <li style="color: #0563bb;" class="active"><a href="#hero"><i
-                                style="color: #0563bb;"
-                                class="bx bx-home"></i>
-                            <span>Home</span></a></li>
-                <li><a href="#about"><i style="color: #0563bb;" class="bx
+                <li style="color: var(--secondary-color);" class="active"><a href="#hero"><i
+                            style="color: var(--secondary-color);" class="bx bx-home"></i>
+                        <span>Home</span></a></li>
+                <li><a href="#about"><i style="color: var(--secondary-color);" class="bx
                                 bx-user"></i> <span>About</span></a></li>
-                <li><a href="#education"><i style="color: #0563bb;"
-                                class="bx bxs-graduation"></i>
-                            <span>Education</span></a></li>
-                <li><a href="#skills"><i style="color: #0563bb;" class="bx
+                <li><a href="#education"><i style="color: var(--secondary-color);" class="bx bxs-graduation"></i>
+                        <span>Education</span></a></li>
+                <li><a href="#skills"><i style="color: var(--secondary-color);" class="bx
                                 bx-brain"></i> <span>Skills</span></a></li>
-                <li><a href="#experience"><i style="color: #0563bb;"
-                                class="ri-macbook-line"></i>
-                            <span>Experience</span></a></li>
-                <li><a href="#portfolio"><i style="color: #0563bb;"
-                                class="bx bxs-graduation"></i>
-                            <span>Accomplishments</span></a></li>
-                <li><a href="#contact"><i style="color: #0563bb;" class="bx
+                <li><a href="#experience"><i style="color: var(--secondary-color);" class="ri-macbook-line"></i>
+                        <span>Experience</span></a></li>
+                <li><a href="#portfolio"><i style="color: var(--secondary-color);" class="bx bxs-graduation"></i>
+                        <span>Projects</span></a></li>
+                <li><a href="#papers"><i style="color: var(--secondary-color);" class="bx bx-file"></i>
+                        <span>Papers</span></a></li>
+                <li><a href="#contact"><i style="color: var(--secondary-color);" class="bx
                                 bx-envelope"></i> <span>Contact</span></a>
                 </li>
                 <li><a href="assets/Harsh_Resume.pdf"><i style="color:
-                                #0563bb;" class="bx
+                                var(--secondary-color);" class="bx
                                 bxs-file-doc"></i>
-                            <span>Download Resume PDF</span></a></li>
+                        <span>Download Resume PDF</span></a></li>
             </ul>
         </nav>
         <!-- .nav-menu -->
@@ -70,18 +91,20 @@
     <section id="hero" class="d-flex flex-column justify-content-center">
         <div class="container" data-aos="zoom-in" data-aos-delay="100">
             <h1>Harsh Nagoriya</h1>
-            <p>I'm a <span class="typed" style="color: #0563bb;" data-typed-items="Software Engineer,Cloud Software Engineer,Java Application Developer,Backend Engineer"></span></p>
+            <p>I'm a <span class="typed typed-text"
+                    data-typed-items="Software Development Engineer,AWS Cloud Engineer,Java Developer,Backend Engineer"></span>
+            </p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/harshnagoriya/" class="linkedin"><i style="color: #0563bb;"
-                            class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/harshnagoriya" class="google-plus"><i style="color: #0563bb;"
-                            class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/harshnagoriya/" class="linkedin"><i
+                        style="color: var(--secondary-color);" class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/harshnagoriya" class="google-plus"><i style="color: var(--secondary-color);"
+                        class="bx bxl-github"></i></a>
                 <a href="https://scholar.google.co.in/citations?user=cI0ZKq0AAAAJ&hl=en" class="google-plus"><i
-                            style="color: #0563bb;" class="bx bxs-graduation"></i></a>
+                        style="color: var(--secondary-color);" class="bx bxs-graduation"></i></a>
                 <a href="https://www.researchgate.net/profile/Harsh_Nagoriya" class="facebook"><i
-                            style="color: #0563bb;" class="bx bx-book-reader"></i></a>
-                <a href="https://www.instagram.com/realharshnagoriya/" class="instagram"><i style="color: #0563bb;"
-                            class="bx bxl-instagram"></i></a>
+                        style="color: var(--secondary-color);" class="bx bx-book-reader"></i></a>
+                <a href="https://www.instagram.com/realharshnagoriya/" class="instagram"><i
+                        style="color: var(--secondary-color);" class="bx bxl-instagram"></i></a>
             </div>
         </div>
     </section>
@@ -95,17 +118,22 @@
                 <div class="section-title">
                     <h2>About Me</h2>
                     <p>
-                        
-
-A highly motivated and detail-oriented software engineer with over 1.5 years of experience in developing cloud, Java, and Android applications. Proven expertise in leveraging cloud technologies for scalable solutions and creating efficient and user-friendly software for diverse platforms. Demonstrated adaptability and flexibility in working with cross-functional teams to overcome challenges and achieve common objectives. Passionate about staying at the forefront of technology trends to drive success in software development.                     </p>
+                        A highly motivated and detail-oriented Software Development Engineer with expertise in cloud
+                        computing, microservices architecture, and serverless applications. Experienced in developing
+                        scalable solutions using cloud services, optimizing system performance, and building data-driven
+                        applications that deliver actionable insights. Proven track record in leading technical
+                        migrations, automating workflows, and creating user-centric software that addresses real
+                        business needs. Passionate about leveraging technology to solve complex challenges and deliver
+                        solutions that positively impact key business objectives.
+                    </p>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-4">
-                        <img src="assets/img/index.png" class="img-fluid" alt="Profile Picture">
+                        <img src="assets/img/index.png" class="img-fluid" alt="Harsh Nagoriya Profile Picture">
                     </div>
                     <div class="col-lg-8 pt-4 pt-lg-0 content">
-                        <h3 style="color: #0563bb;">Cloud Computing & Java Development Enthusiast</h3>
+                        <h3 style="color: var(--heading-color);">Cloud Computing & Java Development Enthusiast</h3>
                         <!-- Add any additional information here, if needed -->
                         <div class="row">
                             <div class="col-lg-6">
@@ -121,22 +149,33 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                             <div class="col-lg-6">
                                 <ul>
                                     <li><i class="icofont-rounded-right"></i>
-                                        <strong>City:</strong> Bellevue, WA
+                                        <strong>City:</strong> Redmond, WA
                                     </li>
                                     <li><i class="icofont-rounded-right"></i>
-                                        <strong>Email:</strong> <a href="mailto:me@harshnagoriya.info" style="color: #0563bb;">&lt;anything&gt;@harshnagoriya.info</a>
+                                        <strong>Email:</strong> <a href="mailto:me@harshnagoriya.info"
+                                            style="color: var(--link-color);">&lt;anything&gt;@harshnagoriya.info</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-<p>
-    <i class="icofont-rounded-right"></i> Demonstrated expertise in backend development, utilizing Python and Java to create and optimize API endpoints. Proficient in designing RESTful interfaces and implementing secure and efficient data communication between applications.    <br />
-    <i class="icofont-rounded-right"></i> Proficient in implementing scalable cloud solutions, I specialize in designing and deploying efficient cloud architectures, optimizing resource utilization, and ensuring seamless scalability.
-    <br />
-    <i class="icofont-rounded-right"></i> Familiarity with Agile methodologies and continuous integration/continuous delivery (CI/CD) pipelines.
-    <br />
-    <i class="icofont-rounded-right"></i> Proven track record in Software Development Engineer in Test, including the creation and execution of mobile app test plans, bug resolution, and the establishment of robust test frameworks that reduced manual testing efforts.
-</p>
+                        <p>
+                            <i class="icofont-rounded-right"></i> Strong backend development expertise using Python and
+                            Java to build high-performance API endpoints and microservices. Skilled in designing RESTful
+                            interfaces and implementing secure, efficient data communication protocols across
+                            distributed systems. <br />
+                            <i class="icofont-rounded-right"></i> Experience architecting scalable cloud solutions with
+                            focus on infrastructure optimization, cost efficiency, and high availability. Proficient in
+                            designing resilient systems that can handle varying workloads while maintaining performance
+                            standards.
+                            <br />
+                            <i class="icofont-rounded-right"></i> Practiced in Agile methodologies with expertise in
+                            implementing robust CI/CD pipelines to streamline development workflows and ensure
+                            consistent, reliable software delivery.
+                            <br />
+                            <i class="icofont-rounded-right"></i> Demonstrated ability to bridge development and quality
+                            assurance through test automation frameworks, comprehensive test planning, and systematic
+                            bug resolution processes that improve overall software quality and reliability.
+                        </p>
 
                     </div>
                 </div>
@@ -150,25 +189,25 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="icon-box">
-                            <i style="color: #0563bb;" class="ri-global-line"></i>
+                            <i style="color: var(--secondary-color);" class="ri-global-line"></i>
                             <h3>Software Testing</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                         <div class="icon-box">
-                            <i style="color: #0563bb;" class="ri-database-2-line"></i>
+                            <i style="color: var(--secondary-color);" class="ri-database-2-line"></i>
                             <h3>Data Processing</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                         <div class="icon-box">
-                            <i style="color: #0563bb;" class="ri-cloud-line"></i>
+                            <i style="color: var(--secondary-color);" class="ri-cloud-line"></i>
                             <h3>Cloud Computing</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                         <div class="icon-box">
-                            <i style="color: #0563bb;" class="ri-code-s-slash-fill"></i>
+                            <i style="color: var(--secondary-color);" class="ri-code-s-slash-fill"></i>
                             <h3>Software Development</h3>
                         </div>
                     </div>
@@ -190,15 +229,17 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                             <img src="assets/img/asu.png" class="img-fluid" alt="Arizona State University Logo">
                             <h4 style="text-align:center;padding: 0px 10px;">Arizona State University</h4>
                             <h5 style="text-align:center;padding: 0px 10px;">
-                                <a href="assets/ASU_Degree_Cert.pdf" target="_blank" style="color:#8c1d40">
+                                <a href="assets/ASU_Degree_Cert.pdf" target="_blank" style="color:var(--link-color)">
                                     <em>Master of Science</em>
                                     <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup>
                                 </a>
                             </h5>
-                            <h6 style="text-align:center;padding: 0px 10px;color:#8c1d40"><em>(Computer Science)</em></h6>
+                            <h6 style="text-align:center;padding: 0px 10px;color:var(--text-color)"><em>(Computer
+                                    Science)</em></h6>
                             <p style="text-align:center;padding: 0px 10px;">August 2021 - May 2023</p>
                             <h6 style="text-align:center;padding: 0px 10px;">Relevant Coursework:</h6>
-                            <h6 style="text-align:center;padding: 0px 10px;">Cloud Computing, Data Processing at Scale, Software Testing/Quality Management, Data Visualization</h6>
+                            <h6 style="text-align:center;padding: 0px 10px;">Cloud Computing, Data Processing at Scale,
+                                Software Testing/Quality Management, Data Visualization</h6>
                         </div>
                     </div>
                     <div class="col-md-6" data-aos="fade-up">
@@ -206,15 +247,17 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                             <img src="assets/img/ddu.png" class="img-fluid" alt="Dharmsinh Desai University Logo">
                             <h4 style="text-align:center;padding: 0px 10px;">Dharmsinh Desai University</h4>
                             <h5 style="text-align:center;padding: 0px 10px;">
-                                <a href="assets/DDU_Degree_Cert.pdf" target="_blank" style="color:#ea502a">
+                                <a href="assets/DDU_Degree_Cert.pdf" target="_blank" style="color:var(--link-color)">
                                     <em>Bachelor of Technology</em>
                                     <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup>
                                 </a>
                             </h5>
-                            <h6 style="text-align:center;padding: 0px 10px;color:#ea502a"><em>(Information Technology)</em></h6>
+                            <h6 style="text-align:center;padding: 0px 10px;color:var(--text-color)"><em>(Information
+                                    Technology)</em></h6>
                             <p style="text-align:center;padding: 0px 10px;">August 2017 - May 2021</p>
                             <h6 style="text-align:center;padding: 0px 10px;">Relevant Coursework:</h6>
-                            <h6 style="text-align:center;padding: 0px 10px;">Data Structure and Algorithms, Databases, Advanced Java and Design Patterns, Distributed Computing</h6>
+                            <h6 style="text-align:center;padding: 0px 10px;">Data Structure and Algorithms, Databases,
+                                Advanced Java and Design Patterns, Distributed Computing</h6>
                         </div>
                     </div>
                 </div>
@@ -235,13 +278,18 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                     </div>
 
                     <div class="skills-box">
+                        <i style="color: #0563bb;" class='bx bxl-python'></i>
+                        <h3>Python</h3>
+                    </div>
+
+                    <div class="skills-box">
                         <i style="color: #0563bb;" class='bx bxl-javascript'></i>
                         <h3>JavaScript</h3>
                     </div>
 
                     <div class="skills-box">
-                        <i style="color: #0563bb;" class='bx bx-code-alt'></i>
-                        <h3>C</h3>
+                        <i style="color: #0563bb;" class='bx bxl-typescript'></i>
+                        <h3>TypeScript</h3>
                     </div>
 
                     <div class="skills-box">
@@ -250,8 +298,8 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                     </div>
 
                     <div class="skills-box">
-                        <i style="color: #0563bb;" class='bx bxl-python'></i>
-                        <h3>Python</h3>
+                        <i style="color: #0563bb;" class='bx bx-data'></i>
+                        <h3>SQL</h3>
                     </div>
 
                     <div class="skills-box">
@@ -260,33 +308,43 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                     </div>
 
                     <div class="skills-box">
-                        <i style="color: #0563bb;" class='bx bx-code-curly'></i>
-                        <h3>Solidity</h3>
+                        <i style="color: #0563bb;" class='bx bxl-aws'></i>
+                        <h3>AWS</h3>
+                    </div>
+
+                    <div class="skills-box">
+                        <i style="color: #0563bb;" class='bx bx-server'></i>
+                        <h3>Lambda</h3>
+                    </div>
+
+                    <div class="skills-box">
+                        <i style="color: #0563bb;" class='bx bx-cloud'></i>
+                        <h3>S3</h3>
                     </div>
 
                     <div class="skills-box">
                         <i style="color: #0563bb;" class='bx bx-data'></i>
-                        <h3>SQL</h3>
+                        <h3>DynamoDB</h3>
                     </div>
 
                     <div class="skills-box">
-                        <i style="color: #0563bb;" class='bx bxs-data'></i>
-                        <h3>PL/SQL</h3>
+                        <i style="color: #0563bb;" class='bx bx-message-square-detail'></i>
+                        <h3>SNS/SQS</h3>
                     </div>
 
                     <div class="skills-box">
-                        <i style="color: #0563bb;" class="bx bx-hash"></i>
-                        <h3>C#</h3>
+                        <i style="color: #0563bb;" class='bx bx-leaf'></i>
+                        <h3>Spring Boot</h3>
                     </div>
 
                     <div class="skills-box">
-                        <i style="color: #0563bb;" class='bx bx-terminal'></i>
-                        <h3>Prolog</h3>
+                        <i style="color: #0563bb;" class='bx bxl-nodejs'></i>
+                        <h3>Node.js</h3>
                     </div>
 
                     <div class="skills-box">
-                        <i style="color: #0563bb;" class='bx bx-code'></i>
-                        <h3>Assembly Language</h3>
+                        <i style="color: #0563bb;" class='bx bxl-react'></i>
+                        <h3>React</h3>
                     </div>
 
                     <div class="skills-box">
@@ -300,23 +358,18 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                     </div>
 
                     <div class="skills-box">
-                        <i style="color: #0563bb;" class="bx icon-mariadb"></i>
-                        <h3>MariaDB</h3>
+                        <i style="color: #0563bb;" class='bx bx-data'></i>
+                        <h3>RedShift</h3>
                     </div>
 
                     <div class="skills-box">
-                        <i style="color: #0563bb;" class="bx icon-oracle"></i>
-                        <h3>Oracle SQL Plus</h3>
+                        <i style="color: #0563bb;" class='bx bx-network-chart'></i>
+                        <h3>Microservices</h3>
                     </div>
 
                     <div class="skills-box">
-                        <i style="color: #0563bb;" class='bx bxl-aws'></i>
-                        <h3>AWS</h3>
-                    </div>
-
-                    <div class="skills-box">
-                        <i style="color: #0563bb;" class='bx bxl-git'></i>
-                        <h3>Git</h3>
+                        <i style="color: #0563bb;" class='bx bxl-kubernetes'></i>
+                        <h3>Kubernetes</h3>
                     </div>
 
                     <div class="skills-box">
@@ -325,8 +378,18 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                     </div>
 
                     <div class="skills-box">
-                        <i style="color: #0563bb;" class='bx bxl-android'></i>
-                        <h3>Android Studio</h3>
+                        <i style="color: #0563bb;" class='bx bxl-git'></i>
+                        <h3>Git</h3>
+                    </div>
+
+                    <div class="skills-box">
+                        <i style="color: #0563bb;" class='bx bx-code-block'></i>
+                        <h3>Terraform</h3>
+                    </div>
+
+                    <div class="skills-box">
+                        <i style="color: #0563bb;" class='bx bx-test-tube'></i>
+                        <h3>JUnit/TestNG</h3>
                     </div>
 
                     <div class="skills-box">
@@ -334,94 +397,128 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                         <h3>Agile</h3>
                     </div>
 
-                    <div class="skills-box">
-                        <i style="color: #0563bb;" class='bx bx-code-block'></i>
-                        <h3>SDLC</h3>
-                    </div>
-
                 </div>
             </div>
         </section>
 
-<section id="experience" class="services">
-    <div class="container">
-        <div class="section-title">
-            <h2>Experience</h2>
-        </div>
-        <div class="row">
-            <div class="col-lg-12" data-aos="fade-up">
+        <section id="experience" class="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Experience</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12" data-aos="fade-up">
 
-                <!-- Amazon - Software Development Engineer (Backend) -->
-<div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
-    <br>
-    <h4 style="text-align:left;"><a href="https://www.amazon.com/" style="color: #0563bb;" target="_blank">Amazon <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup></a><br></h4>
-    <span style="float: right">
-        <h5 style="text-align:left;">Dec 2023 - Present</h5>
-    </span>
-    <h4 style="text-align:left;color:#000000"><em>Software Dev Engineer</em></h4>
-    <ul style="text-align:left;">
-        <li>Contributed to high-impact LSE and managed high severity tasks by being on call, ensuring system stability and reliability during critical periods, including 24/7 availability for urgent issues.</li>
-  <li>Developed and maintained 5+ Java-based APIs for seamless data exchange with vendors in the health insurance industry, fostering efficient integration and data flow.</li>
-  <li>Implemented data transformation logic to convert 1000+ records per day between company-specific data formats and vendor-specific formats, ensuring compatibility and smooth data exchange within the benefits technology ecosystem.</li>
-  <li>Streamlined service lifecycle for applications using AWS Fargate and Step Functions, automating over 10+ workflow jobs and reducing manual workload by 4 hours per day.</li>
-  <li>Transformed JSON and relational database structured data into industry-standard formats, such as EDI 834, ensuring adherence to data integrity and facilitating interoperability for 100K+ records.</li>
-    </ul>
-    <br>
-</div>
+                        <!-- Amazon - Software Development Engineer (Backend) -->
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                            <br>
+                            <h4 style="text-align:left;"><a href="https://www.amazon.com/" style="color: #0563bb;"
+                                    target="_blank">Amazon <sup><i class="fa fa-external-link"
+                                            style="font-size:12px"></i></sup></a><br></h4>
+                            <span style="float: right">
+                                <h5 style="text-align:left;">Dec 2023 - Present</h5>
+                            </span>
+                            <h4 style="text-align:left;color:#000000"><em>Software Development Engineer</em></h4>
+                            <ul style="text-align:left;">
+                                <li>Led the migration of Layer 7 TCP Virtual IPs from NetScaler to Amazon Application
+                                    Load Balancer, optimizing traffic distribution for microservices and enhancing
+                                    performance in a cloud-native environment. Configured cross-region routing and
+                                    SSL/TLS termination, reducing costs by eliminating hardware load balancers and
+                                    enabling automated scaling.</li>
+                                <li>Implemented automated content replication across 6+ Amazon marketplaces using
+                                    serverless architecture, processing 300+ content variations and enabling 90+
+                                    successful replications through integration with 3 localization services.</li>
+                                <li>Set up a customer content optimization metric based on purchase success rates,
+                                    automating content placement on the Amazon checkout thank-you page, resulting in a
+                                    28% increase in engagement and a 16% improvement in post-purchase conversions.</li>
+                                <li>Developed a dynamic, data-driven content optimization system enabling real-time
+                                    personalized ranking (p13n) of customer experiences. Replaced static rule-based
+                                    selection with contextual ranking, increasing content engagement by 15% and
+                                    improving conversion rates by 10%.</li>
+                            </ul>
+                            <br>
+                        </div>
 
-                
-                <!-- Audere - Software Engineer (Backend) -->
-                <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
-                    <br>
-                    <h4 style="text-align:left;"><a href="https://www.auderenow.org/" style="color: #0563bb;" target="_blank">Audere <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup></a><br></h4>
-                    <span style="float: right">
-                        <h5 style="text-align:left;">Aug 2023 - Dec 2023</h5>
-                    </span>
-                    <h4 style="text-align:left;color:#000000"><em>Software Engineer (Backend)</em></h4>
-                    <ul style="text-align:left;">
-                        <li>Collaborated with cross-functional teams to establish clear API specifications, ensuring the maintenance of 100% consistent and reliable interfaces across the board.</li>
-                        <li>Created and optimized more than 3 partner-facing API endpoints, enhancing system performance and delivering faster response times for business requirements.</li>
-                        <li>Designed and implemented Python scripts to automate the generation of database schema, resulting in a 95% reduction in manual errors and saving over 15 hours of manual work per week.</li>
-                        <li>Maintained version-controlled Python scripts, enabling easy tracking of schema changes and promoting collaboration among 4+ team members.</li>
-                    </ul>
-                    <br>
+
+                        <!-- Audere - Software Engineer (Backend) -->
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                            <br>
+                            <h4 style="text-align:left;"><a href="https://www.auderenow.org/" style="color: #0563bb;"
+                                    target="_blank">Audere <sup><i class="fa fa-external-link"
+                                            style="font-size:12px"></i></sup></a><br></h4>
+                            <span style="float: right">
+                                <h5 style="text-align:left;">Aug 2023 - Dec 2023</h5>
+                            </span>
+                            <h4 style="text-align:left;color:#000000"><em>Software Engineer (Backend)</em></h4>
+                            <ul style="text-align:left;">
+                                <li>Collaborated with cross-functional teams to establish clear API specifications,
+                                    ensuring the maintenance of 100% consistent and reliable interfaces across the
+                                    board.</li>
+                                <li>Created and optimized more than 3 partner-facing API endpoints, enhancing system
+                                    performance and delivering faster response times for business requirements.</li>
+                                <li>Designed and implemented Python scripts to automate the generation of database
+                                    schema, resulting in a 95% reduction in manual errors and saving over 15 hours of
+                                    manual work per week.</li>
+                                <li>Maintained version-controlled Python scripts, enabling easy tracking of schema
+                                    changes and promoting collaboration among 4+ team members.</li>
+                            </ul>
+                            <br>
+                        </div>
+                        <!-- SDET/QA 1 -->
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                            <br>
+                            <h4 style="text-align:left;"><a href="https://www.auderenow.org/" style="color: #0563bb;"
+                                    target="_blank">Audere <sup><i class="fa fa-external-link"
+                                            style="font-size:12px"></i></sup></a><br></h4>
+                            <span style="float: right">
+                                <h5 style="text-align:left;">Aug 2022 - Aug 2023</h5>
+                            </span>
+                            <h4 style="text-align:left;color:#000000"><em>SDET/QA 1</em></h4>
+                            <ul style="text-align:left;">
+                                <li>Demonstrated leadership abilities as the primary (lead) QA for Computer Vision and
+                                    Android development, handling quality assurance activities and ensuring compliance
+                                    with project deliverables and timelines for 3+ projects.</li>
+                                <li>Led and directed Android Espresso automation initiatives, establishing and executing
+                                    robust test frameworks resulting in a 40% reduction in manual testing efforts and a
+                                    24% increase in test coverage.</li>
+                                <li>Created and executed over 200 mobile app test plans, ensuring high software quality
+                                    and customer satisfaction.</li>
+                                <li>Collaborated with development teams to resolve 100+ bugs and improve software
+                                    functionality.</li>
+                                <li>Monitored and reported on testing results, providing insights and recommendations to
+                                    improve software quality, resulting in a 95% customer satisfaction rate.</li>
+                            </ul>
+                            <br>
+                        </div>
+                        <!-- Institute for Plasma Research -->
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                            <br>
+                            <h4 style="text-align:left;"><a href="https://www.ipr.res.in/" target="_blank"
+                                    style="color: #0563bb;">Institute for Plasma Research <sup><i
+                                            class="fa fa-external-link" style="font-size:12px"></i></sup></a><br></h4>
+                            <span style="float: right">
+                                <h5 style="text-align:left;">Dec 2020 - Apr 2021</h5>
+                            </span>
+                            <h4 style="text-align:left;color:#000000"><em>Project Intern</em></h4>
+                            <ul style="text-align:left;">
+                                <li>Enhanced the development of Ethereum blockchain by utilizing Solidity, JavaScript,
+                                    and Java and maintaining both client-side and server-side code. Complied with
+                                    industry-standard software development procedures and crafted 5 UML diagrams to
+                                    enhance comprehension and facilitate future maintenance.</li>
+                                <li>Participated in code reviews to ensure the quality and reliability of the final
+                                    product.</li>
+                            </ul>
+                            <br>
+                        </div>
+                        <!-- Add other experience sections here -->
+                    </div>
                 </div>
-                <!-- SDET/QA 1 -->
-                <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
-                    <br>
-                    <h4 style="text-align:left;"><a href="#" style="color: #0563bb;" target="_blank">Audere <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup></a><br></h4>
-                    <span style="float: right">
-                        <h5 style="text-align:left;">Aug 2022 - Aug 2023</h5>
-                    </span>
-                    <h4 style="text-align:left;color:#000000"><em>SDET/QA 1</em></h4>
-                    <ul style="text-align:left;">
-                        <li>Demonstrated leadership abilities as the primary (lead) QA for Computer Vision and Android development, handling quality assurance activities and ensuring compliance with project deliverables and timelines for 3+ projects.</li>
-                        <li>Led and directed Android Espresso automation initiatives, establishing and executing robust test frameworks resulting in a 40% reduction in manual testing efforts and a 24% increase in test coverage.</li>
-                        <li>Created and executed over 200 mobile app test plans, ensuring high software quality and customer satisfaction.</li>
-                        <li>Collaborated with development teams to resolve 100+ bugs and improve software functionality.</li>
-                        <li>Monitored and reported on testing results, providing insights and recommendations to improve software quality, resulting in a 95% customer satisfaction rate.</li>
-                    </ul>
-                    <br>
-                </div>
-                <!-- Institute for Plasma Research -->
-                <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
-                    <br>
-                    <h4 style="text-align:left;"><a href="https://www.ipr.res.in/" target="_blank" style="color: #0563bb;">Institute for Plasma Research <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup></a><br></h4>
-                    <span style="float: right">
-                        <h5 style="text-align:left;">Dec 2020 - Apr 2021</h5>
-                    </span>
-                    <h4 style="text-align:left;color:#000000"><em>Project Intern</em></h4>
-                    <ul style="text-align:left;">
-                        <li>Enhanced the development of Ethereum blockchain by utilizing Solidity, JavaScript, and Java and maintaining both client-side and server-side code. Complied with industry-standard software development procedures and crafted 5 UML diagrams to enhance comprehension and facilitate future maintenance.</li>
-                        <li>Participated in code reviews to ensure the quality and reliability of the final product.</li>
-                    </ul>
-                    <br>
-                </div>
-                <!-- Add other experience sections here -->
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
         <!-- ======= Portfolio Section ======= -->
@@ -434,26 +531,36 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                 <div class="row">
                     <!-- Project 1 -->
                     <div class="col-lg-12" data-aos="fade-up">
-                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
                             <br>
-                            <h4 style="text-align:left; color: #0563bb;">
-                                <a href="https://github.com/harshnagoriya/Face-Recognition-on-a-PAAS" target="_blank" style="color: #0563bb;">
-                                            Face Recognition on a PAAS 
-                                            <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup>
-                                        </a>
+                            <h4 class="project-heading">
+                                <a href="https://github.com/harshnagoriya/Face-Recognition-on-a-PAAS" target="_blank"
+                                    class="project-link">
+                                    Face Recognition on a PAAS
+                                    <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup>
+                                </a>
                             </h4>
                             <h6 style="text-align:left;">
                                 AWS Lambda, Amazon SQS, Amazon DynamoDB, Amazon API Gateway, Docker, RaspberryPI
                                 <span style="float:right;">Mar 2022 – May 2022</span>
                             </h6>
                             <ul style="text-align:left;">
-                                <li>Designed and implemented a distributed application using AWS Lambda, Amazon SQS, Amazon DynamoDB, and Amazon API Gateway to perform real-time face recognition on real videos recorded by IoT devices, resulting in a highly
+                                <li>Designed and implemented a distributed application using AWS Lambda, Amazon SQS,
+                                    Amazon DynamoDB, and Amazon API Gateway to perform real-time face recognition on
+                                    real videos recorded by IoT devices, resulting in a highly
                                     scalable and efficient system.</li>
-                                <li>Utilized Docker to containerize the application and deploy it on an AWS Lambda, improving its portability and flexibility.</li>
-                                <li>Improved IoT operations latency by implementing optimized communication protocols and utilizing Amazon SQS for message queueing and asynchronous processing.</li>
-                                <li>Conducted rigorous testing and validation to ensure the accuracy and reliability of the face recognition system, achieving a high level of accuracy and reducing false positives.
+                                <li>Utilized Docker to containerize the application and deploy it on an AWS Lambda,
+                                    improving its portability and flexibility.</li>
+                                <li>Improved IoT operations latency by implementing optimized communication protocols
+                                    and utilizing Amazon SQS for message queueing and asynchronous processing.</li>
+                                <li>Conducted rigorous testing and validation to ensure the accuracy and reliability of
+                                    the face recognition system, achieving a high level of accuracy and reducing false
+                                    positives.
                                 </li>
-                                <li>Tested the AWS Lambda function by sending over 500 requests in 5 minutes, identifying and resolving performance bottlenecks and improving the overall system responsiveness.
+                                <li>Tested the AWS Lambda function by sending over 500 requests in 5 minutes,
+                                    identifying and resolving performance bottlenecks and improving the overall system
+                                    responsiveness.
                                 </li>
                             </ul>
                             <br>
@@ -462,23 +569,30 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
 
                     <!-- Project 2 -->
                     <div class="col-lg-12" data-aos="fade-up">
-                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
                             <br>
-                            <h4 style="text-align:left; color: #0563bb;">
-                                <a href="https://github.com/harshnagoriya/Face-Recognition-as-a-Service" target="_blank" style="color: #0563bb;">
-                                            Face Recognition as a Service 
-                                            <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup>
-                                        </a>
+                            <h4 class="project-heading">
+                                <a href="https://github.com/harshnagoriya/Face-Recognition-as-a-Service" target="_blank"
+                                    class="project-link">
+                                    Face Recognition as a Service
+                                    <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup>
+                                </a>
                             </h4>
                             <h6 style="text-align:left;">
                                 Amazon Elastic Compute Cloud, Amazon SQS, Amazon Simple Storage Service, Flask
                                 <span style="float:right;">Jan 2022 – Mar 2022</span>
                             </h6>
                             <ul style="text-align:left;">
-                                <li>Constructed a face recognition service based on Python, deployed on Amazon Web Services (AWS) EC2, incorporating the use of SQS and S3 for cost-efficient scaling.</li>
-                                <li>Implemented manually scripted load-balancers that automatically scaled in and out on demand to accommodate changing traffic patterns.
+                                <li>Constructed a face recognition service based on Python, deployed on Amazon Web
+                                    Services (AWS) EC2, incorporating the use of SQS and S3 for cost-efficient scaling.
                                 </li>
-                                <li>Evaluated the scalability of the application by generating 1000 concurrent user requests, demonstrating its ability to handle high volumes of traffic efficiently.</li>
+                                <li>Implemented manually scripted load-balancers that automatically scaled in and out on
+                                    demand to accommodate changing traffic patterns.
+                                </li>
+                                <li>Evaluated the scalability of the application by generating 1000 concurrent user
+                                    requests, demonstrating its ability to handle high volumes of traffic efficiently.
+                                </li>
 
                             </ul>
                             <br>
@@ -487,22 +601,27 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
 
                     <!-- Project 3 -->
                     <div class="col-lg-12" data-aos="fade-up">
-                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
                             <br>
-                            <h4 style="text-align:left; color: #0563bb;">
-                                <a href="https://github.com/ser515team28/SER515-Team28-SoccerTournament" target="_blank" style="color: #0563bb;">
-                                        Soccer Tournament Website 
-                                        <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup>
-                                    </a>
+                            <h4 class="project-heading">
+                                <a href="https://github.com/ser515team28/SER515-Team28-SoccerTournament" target="_blank"
+                                    class="project-link">
+                                    Soccer Tournament Website
+                                    <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup>
+                                </a>
                             </h4>
                             <h6 style="text-align:left;">
                                 Java Server Pages, Servlets, J2EE, JQuery, AJAX, Bootstrap, MVC, MariaDB
                                 <span style="float:right;">Sep 2021 – Dec 2021</span>
                             </h6>
                             <ul style="text-align:left;">
-                                <li>Developed a J2EE-based website with 6 distinct user roles, utilizing Agile software development principles, UML design concepts, Git version control, and Taiga scrum management.</li>
+                                <li>Developed a J2EE-based website with 6 distinct user roles, utilizing Agile software
+                                    development principles, UML design concepts, Git version control, and Taiga scrum
+                                    management.</li>
                                 <li>Revamped the user interface through integration of JQuery and AJAX scripts.</li>
-                                <li>Ensured high-quality results through compliance with specification-based and structural-based testing practices.</li>
+                                <li>Ensured high-quality results through compliance with specification-based and
+                                    structural-based testing practices.</li>
                             </ul>
                             <br>
                         </div>
@@ -510,9 +629,10 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
 
                     <!-- Project 4 -->
                     <div class="col-lg-12" data-aos="fade-up">
-                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
                             <br>
-                            <h4 style="text-align:left; color: #0563bb;">
+                            <h4 class="project-heading">
                                 Complaint Management System
                             </h4>
                             <h6 style="text-align:left;">
@@ -520,11 +640,21 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                                 <span style="float:right;">Feb 2021 – Apr 2021</span>
                             </h6>
                             <ul style="text-align:left;">
-                                <li>Developed a Complaint Management System using Java Server Pages and Servlets, reducing the paper-based system and alleviating the problems associated with the current method.</li>
-                                <li>Designed an electronic format for customer and user complaints registration, enabling them to register their complaints electronically, eliminating the need for a manual process.</li>
-                                <li>Created an intuitive user interface for the system, allowing customers and users to submit complaints easily and efficiently, leading to a 25% increase in customer satisfaction.</li>
-                                <li>Developed an electronic strategy for delivering announcements and general instructions to customers and users, improving communication and streamlining the process.</li>
-                                <li>Designed the frequently asked questions section for the system, providing customers and users with quick and accurate responses to their queries, reducing the workload of the customer service team by 30%.</li>
+                                <li>Developed a Complaint Management System using Java Server Pages and Servlets,
+                                    reducing the paper-based system and alleviating the problems associated with the
+                                    current method.</li>
+                                <li>Designed an electronic format for customer and user complaints registration,
+                                    enabling them to register their complaints electronically, eliminating the need for
+                                    a manual process.</li>
+                                <li>Created an intuitive user interface for the system, allowing customers and users to
+                                    submit complaints easily and efficiently, leading to a 25% increase in customer
+                                    satisfaction.</li>
+                                <li>Developed an electronic strategy for delivering announcements and general
+                                    instructions to customers and users, improving communication and streamlining the
+                                    process.</li>
+                                <li>Designed the frequently asked questions section for the system, providing customers
+                                    and users with quick and accurate responses to their queries, reducing the workload
+                                    of the customer service team by 30%.</li>
                             </ul>
                             <br>
                         </div>
@@ -532,24 +662,34 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
 
                     <!-- Project 5 -->
                     <div class="col-lg-12" data-aos="fade-up">
-                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
                             <br>
-                            <h4 style="text-align:left; color: #0563bb;">
-                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6729872035222290432/" target="_blank" style="color: #0563bb;">
-                                        FaceMask Detection System 
-                                        <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup>
-                                    </a>
+                            <h4 class="project-heading">
+                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6729872035222290432/"
+                                    target="_blank" class="project-link">
+                                    FaceMask Detection System
+                                    <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup>
+                                </a>
                             </h4>
                             <h6 style="text-align:left;">
                                 Selenium, Data Collection and Processing, ResNet-101, Image Processing, RaspberryPI
                                 <span style="float:right;">Sep 2020 – Dec 2020</span>
                             </h6>
                             <ul style="text-align:left;">
-                                <li>Developed a mask detection system using machine learning and deep learning techniques that achieved up to 96% accuracy in detecting whether a person has worn a mask or not.</li>
-                                <li>Trained a ResNet-151 convolutional neural network on a dataset of 18,236 images to classify the presence of masks in real-time video streams.</li>
-                                <li>Implemented the Adam optimizer to improve the training process and reduce overfitting, resulting in higher accuracy and reduced computational time.</li>
-                                <li>Conducted rigorous testing and validation to ensure the accuracy and reliability of the mask detection system, achieving a 96% success rate in detecting whether a person has worn a mask or not.</li>
-                                <li>Developed an automated alert system to notify authorities and individuals of non-compliance with mask-wearing regulations, improving public safety and reducing the spread of infectious diseases.</li>
+                                <li>Developed a mask detection system using machine learning and deep learning
+                                    techniques that achieved up to 96% accuracy in detecting whether a person has worn a
+                                    mask or not.</li>
+                                <li>Trained a ResNet-151 convolutional neural network on a dataset of 18,236 images to
+                                    classify the presence of masks in real-time video streams.</li>
+                                <li>Implemented the Adam optimizer to improve the training process and reduce
+                                    overfitting, resulting in higher accuracy and reduced computational time.</li>
+                                <li>Conducted rigorous testing and validation to ensure the accuracy and reliability of
+                                    the mask detection system, achieving a 96% success rate in detecting whether a
+                                    person has worn a mask or not.</li>
+                                <li>Developed an automated alert system to notify authorities and individuals of
+                                    non-compliance with mask-wearing regulations, improving public safety and reducing
+                                    the spread of infectious diseases.</li>
                             </ul>
                             <br>
                         </div>
@@ -557,9 +697,10 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
 
                     <!-- Project 6 -->
                     <div class="col-lg-12" data-aos="fade-up">
-                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
                             <br>
-                            <h4 style="text-align:left; color: #0563bb;">
+                            <h4 class="project-heading">
                                 Student Attendance System using Face Recognition
                             </h4>
                             <h6 style="text-align:left;">
@@ -567,10 +708,16 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                                 <span style="float:right;">Feb 2020 – May 2020</span>
                             </h6>
                             <ul style="text-align:left;">
-                                <li>Designed and implemented a Raspberry Pi-based system to automate attendance tracking, reducing time, effort, and resources by 50%.</li>
-                                <li>Developed a face recognition system using Eigen matrix concept (Eigen Face) to detect and recognize human faces accurately and quickly through images and videos captured by a camera.</li>
-                                <li>Implemented the system to detect faces within the images and compare them with the database of registered faces to mark student attendance as absent.</li>
-                                <li>Designed and executed tests to ensure the accuracy and reliability of the face recognition system, achieving a 95% success rate in recognizing registered faces.</li>
+                                <li>Designed and implemented a Raspberry Pi-based system to automate attendance
+                                    tracking, reducing time, effort, and resources by 50%.</li>
+                                <li>Developed a face recognition system using Eigen matrix concept (Eigen Face) to
+                                    detect and recognize human faces accurately and quickly through images and videos
+                                    captured by a camera.</li>
+                                <li>Implemented the system to detect faces within the images and compare them with the
+                                    database of registered faces to mark student attendance as absent.</li>
+                                <li>Designed and executed tests to ensure the accuracy and reliability of the face
+                                    recognition system, achieving a 95% success rate in recognizing registered faces.
+                                </li>
                             </ul>
                             <br>
                         </div>
@@ -578,9 +725,10 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
 
                     <!-- Project 7 -->
                     <div class="col-lg-12" data-aos="fade-up">
-                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
                             <br>
-                            <h4 style="text-align:left; color: #0563bb;">
+                            <h4 class="project-heading">
                                 Helmet Detection System
                             </h4>
                             <h6 style="text-align:left;">
@@ -588,10 +736,15 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                                 <span style="float:right;">Aug 2019 – Nov 2019</span>
                             </h6>
                             <ul style="text-align:left;">
-                                <li>Developed a machine learning model using Single Shot MultiBox Detector (SSD) to identify bikers among moving objects in real-time video streams.</li>
-                                <li>Designed a Convolutional Neural Network (CNN) to detect helmetless bikers and capture their number plates using YOLOv3 and Tesseract.</li>
-                                <li>Tested and optimized the model to improve accuracy and efficiency, achieving a 90% success rate in identifying helmetless bikers and capturing their number plates.</li>
-                                <li>Developed an automated data storage system that stores biker information and their number plates in a database for future reference and analysis.</li>
+                                <li>Developed a machine learning model using Single Shot MultiBox Detector (SSD) to
+                                    identify bikers among moving objects in real-time video streams.</li>
+                                <li>Designed a Convolutional Neural Network (CNN) to detect helmetless bikers and
+                                    capture their number plates using YOLOv3 and Tesseract.</li>
+                                <li>Tested and optimized the model to improve accuracy and efficiency, achieving a 90%
+                                    success rate in identifying helmetless bikers and capturing their number plates.
+                                </li>
+                                <li>Developed an automated data storage system that stores biker information and their
+                                    number plates in a database for future reference and analysis.</li>
                             </ul>
                             <br>
                         </div>
@@ -600,13 +753,15 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
 
                     <!-- Project 8 -->
                     <div class="col-lg-12" data-aos="fade-up">
-                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
                             <br>
-                            <h4 style="text-align:left; color: #0563bb;">
-                                <a href="https://github.com/harshnagoriya?tab=repositories" target="_blank" style="color: #0563bb;">
-                                        Other Small Projects 
-                                        <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup>
-                                    </a>
+                            <h4 class="project-heading">
+                                <a href="https://github.com/harshnagoriya?tab=repositories" target="_blank"
+                                    class="project-link">
+                                    Other Small Projects
+                                    <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup>
+                                </a>
                             </h4>
                             <ul style="text-align:left;">
                                 <li>
@@ -651,39 +806,53 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
         </section>
 
 
-        <section id="portfolio" class="services">
+        <section id="papers" class="services">
             <div class="container">
                 <div class="section-title">
                     <h2>Technical Papers</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-12" data-aos="fade-up">
-                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
                             <br>
-                            <h4 style="text-align:left; color: #0563bb;">Live Facemask Detection System</h4>
+                            <h4 class="project-heading">Live Facemask Detection System</h4>
                             <h6 style="text-align:left;">International Journal of Imaging and Robotics™</h6>
                             <h6 style="text-align:left;">2021 Volume 21, Issue I, Page No: 1-8, ISSN: 2231-525X</h6>
                             <br>
                         </div>
                     </div>
                     <div class="col-lg-12" data-aos="fade-up">
-                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
                             <br>
-                            <h4 style="text-align:left; color: #0563bb;">Attendance System using Face Recognition utilizing OpenCV Image Processing Library</h4>
-                            <h6 style="text-align:left;">International Journal for Research in Applied Science and Engineering Technology</h6>
-                            <h6 style="text-align:left;">2020 Volume 8, Issue VI, Page No: 1811-1814, ISSN: 2321-9653</h6>
-                            <p class="text-left">DOI: <a href="http://doi.org/10.22214/ijraset.2020.6297" target="_blank" class="google-plus" style="color: #0563bb;">10.22214/ijraset.2020.6297 <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup></a></p>
+                            <h4 class="project-heading">Attendance System using Face Recognition utilizing OpenCV Image
+                                Processing Library</h4>
+                            <h6 style="text-align:left;">International Journal for Research in Applied Science and
+                                Engineering Technology</h6>
+                            <h6 style="text-align:left;">2020 Volume 8, Issue VI, Page No: 1811-1814, ISSN: 2321-9653
+                            </h6>
+                            <p class="text-left">DOI: <a href="http://doi.org/10.22214/ijraset.2020.6297"
+                                    target="_blank" class="google-plus project-link">10.22214/ijraset.2020.6297 <sup><i
+                                            class="fa fa-external-link" style="font-size:12px"></i></sup></a></p>
                             <br>
                         </div>
                     </div>
                     <div class="col-lg-12" data-aos="fade-up">
-                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
                             <br>
-                            <h4 style="text-align:left; color: #0563bb;">Live Helmet Detection System for Detecting Bikers without Helmet</h4>
+                            <h4 class="project-heading">Live Helmet Detection System for Detecting Bikers without Helmet
+                            </h4>
                             <h6 style="text-align:left;">International Journal of Knowledge Based Computer Systems</h6>
                             <h6 style="text-align:left;">2019 Volume 7, Issue 2, Page No: 14-17, ISSN: 2321-5623</h6>
-                            <p class="text-left">DOI: <a href="http://doi.org/10.5281/zenodo.4050483" target="_blank" class="google-plus" style="color: #0563bb;">10.5281/zenodo.4050483 <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup></a></p>
-                            <p class="text-left">Link: <a href="http://www.publishingindia.com/ijkbcs/72/live-helmet-detection-system-for-detecting-bikers-without-helmet/887/6156/" target="_blank" class="google-plus" style="color: #0563bb;">Journal's Article Page <sup><i class="fa fa-external-link" style="font-size:12px"></i></sup></a></p>
+                            <p class="text-left">DOI: <a href="http://doi.org/10.5281/zenodo.4050483" target="_blank"
+                                    class="google-plus project-link">10.5281/zenodo.4050483 <sup><i
+                                            class="fa fa-external-link" style="font-size:12px"></i></sup></a></p>
+                            <p class="text-left">Link: <a
+                                    href="http://www.publishingindia.com/ijkbcs/72/live-helmet-detection-system-for-detecting-bikers-without-helmet/887/6156/"
+                                    target="_blank" class="google-plus project-link">Journal's Article Page <sup><i
+                                            class="fa fa-external-link" style="font-size:12px"></i></sup></a></p>
                             <br>
                         </div>
                     </div>
@@ -699,17 +868,29 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
                     <h2>Contact</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12" data-aos="fade-up">
-                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding-top: 0; padding-bottom: 0; border-radius: 0.5rem;">
-                            <br>
-                            <h4 style="text-align:left;">
-                                <a href="mailto:harshnagoriya@gmail.com" target="_blank" class="google-plus" style="color: #0563bb;">HarshNagoriya@gmail.com</a>
-                            </h4>
-                            <br>
-                            <h4 style="text-align:left;">
-                                <a href="mailto:me@harshnagoriya.info" target="_blank" class="google-plus" style="color: #0563bb;">&lt;anything&gt;@harshnagoriya.info</a>
-                            </h4>
-                            <br>
+                    <div class="col-lg-12 text-center" data-aos="fade-up">
+                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+                            style="padding: 40px; border-radius: 0.5rem; box-shadow: 0 5px 25px rgba(0,0,0,0.1);">
+                            <h3 style="color: var(--heading-color); margin-bottom: 25px; font-weight: 700;">Get In Touch
+                            </h3>
+                            <p style="font-size: 18px; margin-bottom: 25px;">Feel free to reach out to me via email:</p>
+                            <div class="contact-email-container"
+                                style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+                                <div class="contact-email-box"
+                                    style="display: flex; align-items: center; background-color: #f8f9fa; padding: 15px 25px; border-radius: 50px; width: fit-content; transition: all 0.3s ease;">
+                                    <i class="bx bx-envelope"
+                                        style="color: var(--secondary-color); font-size: 24px; margin-right: 15px;"></i>
+                                    <a href="mailto:harshnagoriya@gmail.com" target="_blank" class="contact-link"
+                                        style="font-size: 18px; color: var(--text-color); font-weight: 500;">HarshNagoriya@gmail.com</a>
+                                </div>
+                                <div class="contact-email-box"
+                                    style="display: flex; align-items: center; background-color: #f8f9fa; padding: 15px 25px; border-radius: 50px; width: fit-content; transition: all 0.3s ease;">
+                                    <i class="bx bx-envelope"
+                                        style="color: var(--secondary-color); font-size: 24px; margin-right: 15px;"></i>
+                                    <a href="mailto:me@harshnagoriya.info" target="_blank" class="contact-link"
+                                        style="font-size: 18px; color: var(--text-color); font-weight: 500;">&lt;anything&gt;@harshnagoriya.info</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -726,22 +907,28 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
         <div class="container">
 
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/harshnagoriya/" class="linkedin"><i style="color: #0563bb;"
-                            class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/harshnagoriya" class="google-plus"><i style="color: #0563bb;"
-                            class="bx bxl-github"></i></a>
-                <a href="https://www.instagram.com/realharshnagoriya/" class="instagram"><i style="color: #0563bb;"
-                            class="bx bxl-instagram"></i></a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/harshnagoriya/" class="linkedin"><i
+                        style="color: var(--secondary-color);" class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/harshnagoriya" class="google-plus"><i style="color: var(--secondary-color);"
+                        class="bx bxl-github"></i></a>
+                <a href="https://scholar.google.co.in/citations?user=cI0ZKq0AAAAJ&hl=en" class="google-plus"><i
+                        style="color: var(--secondary-color);" class="bx bxs-graduation"></i></a>
+                <a href="https://www.researchgate.net/profile/Harsh_Nagoriya" class="facebook"><i
+                        style="color: var(--secondary-color);" class="bx bx-book-reader"></i></a>
+                <a href="https://www.instagram.com/realharshnagoriya/" class="instagram"><i
+                        style="color: var(--secondary-color);" class="bx bxl-instagram"></i></a>
+            </div>
             </div>
             <div class="copyright">
-                &copy; Copyright <strong><span>Harsh Nagoriya</span></strong>. All Rights Reserved. Last Updated on Apr 07, 2024 (Timezone: PT).
+                &copy; Copyright <strong><span>Harsh Nagoriya</span></strong>. All Rights Reserved. Last Updated on Jul
+                19, 2025 (Timezone: PT).
             </div>
         </div>
     </footer>
     <!-- End Footer -->
 
-    <a href="#" class="back-to-top"><i style="color: #0563bb;" class="bx
-                bx-up-arrow-alt"></i></a>
+    <a href="#" class="back-to-top"><i style="color: #ffffff;" class="bx bx-up-arrow-alt"></i></a>
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
@@ -750,17 +937,18 @@ A highly motivated and detail-oriented software engineer with over 1.5 years of 
     <script src="assets/vendor/iconify.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- PHP email form removed as GitHub Pages doesn't support server-side processing -->
     <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
     <script src="assets/vendor/counterup/counterup.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <!-- Removed unused isotope and venobox JS libraries -->
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/vendor/typed.js/typed.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <!-- Image Optimization JS File -->
+    <script src="assets/js/image-optimization.js"></script>
 
 </body>
 

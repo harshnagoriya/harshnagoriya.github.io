@@ -1,0 +1,65 @@
+/* AWS-style card class */
+.aws-style-card {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-shadow: 0 1px 1px 0 rgba(0,28,36,.1), 0 1px 3px 1px rgba(0,28,36,.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.aws-style-card:hover {
+  box-shadow: 0 1px 3px 0 rgba(0,28,36,.15), 0 4px 8px 3px rgba(0,28,36,.15);
+  border-color: var(--secondary-color);
+}
+
+/* AWS-style button */
+.aws-style-button {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 6px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.aws-style-button:hover {
+  background-color: #ec7211;
+  border-color: #ec7211;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* AWS-style section */
+.aws-style-section {
+  padding: 40px 0;
+  background-color: var(--light-bg);
+}
+
+/* AWS-style heading */
+.aws-style-heading {
+  color: var(--heading-color);
+  font-family: "Amazon Ember", "Helvetica Neue", Roboto, Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* AWS-style link */
+.aws-style-link {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.aws-style-link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}

@@ -1,0 +1,105 @@
+.project-heading {
+  text-align: left;
+  color: var(--heading-color);
+}
+
+.project-link {
+  color: var(--link-color);
+}
+
+.project-link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* Fix for experience section */
+.experience-heading {
+  color: var(--heading-color) !important;
+}
+
+.experience-link {
+  color: var(--link-color) !important;
+}
+
+.experience-link:hover {
+  color: var(--link-hover) !important;
+}
+
+/* Fix for contact section */
+.contact-link {
+  color: var(--link-color) !important;
+}
+
+.contact-link:hover {
+  color: var(--link-hover) !important;
+}
+
+/* Fix for typed text */
+.typed-text {
+  color: #ffffff !important;
+  background-color: var(--secondary-color);
+  padding: 0 5px;
+}
+
+/* Fix for navigation hover */
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  background: #31465f !important;
+  color: #ffffff !important;
+}
+
+.nav-menu a:hover span, .nav-menu .active > a span, .nav-menu li:hover > a span {
+  color: #ffffff !important;
+}
+
+/* Fix for skills hover */
+.skills-box:hover {
+  background-color: #f8f9fa !important;
+}
+
+.skills-box:hover h3 {
+  color: var(--heading-color) !important;
+}
+
+.skills-box:hover .bx {
+  color: var(--secondary-color) !important;
+}
+
+/* Fix for buttons */
+.aws-style-button {
+  background-color: var(--secondary-color) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.aws-style-button:hover {
+  background-color: #ec7211 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* Fix for footer */
+#footer {
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
+}
+
+#footer .social-links a {
+  color: var(--secondary-color) !important;
+}
+
+#footer .social-links a:hover {
+  color: #ffffff !important;
+}
+
+/* Fix for back to top button */
+.back-to-top {
+  background-color: var(--secondary-color) !important;
+}
+
+.back-to-top i {
+  color: #ffffff !important;
+}
+
+.back-to-top:hover {
+  background-color: #ec7211 !important;
+}
