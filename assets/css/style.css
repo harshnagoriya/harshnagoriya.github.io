@@ -156,7 +156,7 @@ h6 {
 @media (max-width: 992px) {
   #header {
     width: 300px;
-    background: #fff;
+    background: var(--primary-color);
     border-right: 1px solid #e6e9ec;
     left: -300px;
   }
@@ -260,7 +260,7 @@ h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #45505b;
+  color: var(--secondary-color);
 }
 
 .mobile-nav-active {
