@@ -4,13 +4,11 @@
 mkdir -p build/assets/css
 
 # Concatenate all CSS files into one
-cat assets/css/base.css \
-    assets/css/layout.css \
-    assets/css/hero.css \
-    assets/css/components.css \
-    assets/css/sections.css \
-    assets/css/responsive.css \
-    assets/css/fixes.css > build/assets/css/styles.combined.css
+cat assets/css/style.css \
+    assets/css/aws-theme.css \
+    assets/css/aws-components.css \
+    assets/css/aws-style.css \
+    assets/css/color-fixes.css > build/assets/css/styles.combined.css
 
 # Minify CSS (requires csso-cli to be installed: npm install -g csso-cli)
 if command -v csso &> /dev/null; then

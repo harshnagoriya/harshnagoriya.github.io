@@ -9,14 +9,11 @@ This portfolio website uses a modular CSS architecture to improve maintainabilit
 ```
 assets/
 └── css/
-    ├── main.css         # Main file that imports all other CSS files
-    ├── base.css         # Variables and foundational styles
-    ├── layout.css       # Header, navigation, sections, footer
-    ├── hero.css         # Hero section styles
-    ├── components.css   # Reusable components (buttons, cards)
-    ├── sections.css     # Section-specific styles
-    ├── responsive.css   # Media queries for responsive design
-    └── fixes.css        # Specific fixes and overrides
+    ├── style.css           # Main styles and layout
+    ├── aws-theme.css       # AWS theme variables and colors
+    ├── aws-components.css  # AWS-styled components
+    ├── aws-style.css       # Additional AWS styling
+    └── color-fixes.css     # Color-specific fixes and overrides
 ```
 
 ## CSS Variables
