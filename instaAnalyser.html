@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>📱 Instagram Analyzer - Harsh Nagoriya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Amazon Ember';
+            src: url('https://m.media-amazon.com/images/G/01/AmazonUI/fonts/amazon-ember/AmazonEmber_W_Rg.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Amazon Ember';
+            src: url('https://m.media-amazon.com/images/G/01/AmazonUI/fonts/amazon-ember/AmazonEmber_W_Bd.woff2') format('woff2');
+            font-weight: bold;
+            font-style: normal;
+        }
+        :root {
+            --primary-color: #232f3e;
+            --secondary-color: #ff9900;
+            --text-color: #232f3e;
+            --light-bg: #f8f9fa;
+            --link-color: #0073bb;
+            --link-hover: #ec7211;
+            --heading-color: #232f3e;
+            --border-color: #eaeded;
+            --button-text: #ffffff;
+            --hover-bg: #31465f;
+        }
+        body { 
+            font-family: "Amazon Ember", "Helvetica Neue", Roboto, Arial, sans-serif; 
+            padding: 60px 20px; 
+            background: linear-gradient(135deg, var(--primary-color) 0%, #31465f 100%);
+            color: var(--text-color);
+            margin: 0;
+            min-height: 100vh;
+        }
+        .container { 
+            max-width: 500px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 1px 1px 0 rgba(0,28,36,.1), 0 1px 3px 1px rgba(0,28,36,.1);
+        }
+        h2 {
+            color: var(--heading-color);
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+        input[type="file"] { 
+            width: 100%; 
+            padding: 12px; 
+            margin: 8px 0 20px 0; 
+            border: 2px dashed var(--secondary-color); 
+            border-radius: 2px; 
+            box-sizing: border-box;
+            font-family: inherit;
+            background: #fff;
+        }
+        label { 
+            font-weight: 600; 
+            color: var(--heading-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+        button { 
+            width: 100%; 
+            padding: 12px 24px; 
+            background: var(--secondary-color); 
+            color: var(--button-text); 
+            border: none; 
+            border-radius: 2px; 
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            margin-bottom: 10px;
+            font-family: inherit;
+        }
+        button:hover {
+            background: var(--link-hover);
+        }
+        .result { 
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 1px 1px 0 rgba(0,28,36,.1), 0 1px 3px 1px rgba(0,28,36,.1);
+            display: none;
+        }
+        .result.show {
+            display: block;
+        }
+        .red { color: #d13212; font-weight: 500; }
+        .green { color: #037f0c; font-weight: 500; }
+        .section { 
+            margin: 20px 0 15px 0; 
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--heading-color);
+        }
+        ol {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+        ol li {
+            margin-bottom: 8px;
+        }
+        .back-link {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .back-link a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="/">← Back to Portfolio</a>
+        </div>
+        <h2>Instagram Analyzer</h2>
+        <p>Steps:</p>
+        <ol>
+            <li>Go to Instagram → Settings → Privacy → Download Your Information</li>
+            <li>Download your data</li>
+            <li>Upload followers.json and following.json files below</li>
+        </ol>
+        
+        <label>Following file (following.json):</label>
+        <input type="file" id="following" accept=".json">
+        
+        <label>Followers file (followers_1.json):</label>
+        <input type="file" id="followers" accept=".json">
+        <button onclick="analyze()">Analyze</button>
+        <button onclick="window.open(window.location.href, '_blank')" style="background: #FF9500; margin-top: 10px;">Open in Browser</button>
+        
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        async function analyze() {
+            const followingFile = document.getElementById('following').files[0];
+            const followersFile = document.getElementById('followers').files[0];
+            
+            if (!followingFile || !followersFile) {
+                alert('Please select both files');
+                return;
+            }
+            
+            try {
+                const followingText = await followingFile.text();
+                const followersText = await followersFile.text();
+                
+                const followingData = JSON.parse(followingText);
+                const followersData = JSON.parse(followersText);
+                
+                // Process data locally
+                const following = [];
+                for (const relationship of followingData.relationships_following || []) {
+                    for (const item of relationship.string_list_data || []) {
+                        following.push(item.value);
+                    }
+                }
+                
+                const followers = [];
+                for (const item of followersData) {
+                    if (item.string_list_data) {
+                        for (const stringData of item.string_list_data) {
+                            followers.push(stringData.value);
+                        }
+                    }
+                }
+                
+                const followingNotFollowers = following.filter(user => !followers.includes(user));
+                const followersNotFollowing = followers.filter(user => !following.includes(user));
+                
+                displayResult({
+                    following_but_not_followers: followingNotFollowers,
+                    followers_but_not_following: followersNotFollowing,
+                    summary: {
+                        total_following: following.length,
+                        total_followers: followers.length,
+                        not_following_back: followingNotFollowers.length,
+                        you_dont_follow_back: followersNotFollowing.length
+                    }
+                });
+                
+            } catch (error) {
+                document.getElementById('result').innerHTML = `<div class="red">Error: ${error.message}</div>`;
+            }
+        }
+        
+        function displayResult(data) {
+            let html = `<div class="section red">Following but not followers (${data.summary.not_following_back}):</div>`;
+            data.following_but_not_followers.forEach(user => {
+                html += `<div class="red">${user}</div>`;
+            });
+            
+            html += `<div class="section green">Followers but not following (${data.summary.you_dont_follow_back}):</div>`;
+            data.followers_but_not_following.forEach(user => {
+                html += `<div class="green">${user}</div>`;
+            });
+            
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = html;
+            resultDiv.classList.add('show');
+        }
+    </script>
+</body>
+</html>
