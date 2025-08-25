@@ -1,0 +1,196 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[document]{ragged2e}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{hyperref}
+\RequirePackage{fontawesome}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-8pt}
+    \item
+    \begin{tabular*}{0.97\textwidth}{{\extracolsep{\fill}}}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2}\\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Harsh Sanjaykumar Nagoriya} \\ \vspace{4pt}
+    \small \href{mailto:harshnagoriya@gmail.com}{\raisebox{-0.2\height}\  \underline{harshnagoriya@gmail.com}} ~ | 
+    \href{https://linkedin.com/in/harshnagoriya/}{\raisebox{-0.2\height}\ \underline{linkedin.com/in/harshnagoriya}} ~ | 
+    \href{https://harshnagoriya.github.io/}{\raisebox{-0.2\height}\ \underline{harshnagoriya.github.io}}
+
+\end{center}
+\vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {Amazon, Seattle, WA}{}
+      {Software Development Engineer}{Dec 2023 -- Present}
+      \resumeItemListStart
+\resumeItem{Designed and launched a pre-development localization preview service integrated with Figma that reduced global launch timelines from 8 weeks to 1 week; enabled marketers to visually validate AI-powered localized content with in-situ mock reviews and automated the conversion of Figma mocks to Amazon marketing assets.}
+\resumeItem{Developed a microservice to manage the global expansion of Prime savings and benefits features, auditing and updating over 1500 marketing assets across 9+ marketplaces and compressing a 2-month manual process into a single day.}
+\resumeItem{Contributed to a new, event-driven microservice for replicating successful marketing experiments across 18+ Amazon marketplaces, improving the efficiency and scalability of global marketing campaigns.}
+\resumeItem{Led a cross-functional initiative with over 5 teams to launch the first-ever A/B test focused on customer retention, achieving statistical significance with a projected uplift of over 11,000 annualized Prime Members.}
+\resumeItem{Owned the end-to-end migration of an internal content management service from legacy NetScaler hardware to am AWS Application Load Balancer with zero downtime, eliminating critical security risks and enabling future cloud scalability.}
+\resumeItem{Designed and implemented a real-time, event-driven data pipeline using AWS Kinesis, migrating a critical service off a deprecated platform and ensuring 100\% business continuity for experiment analysis dashboards.}
+\resumeItem{Developed the first comprehensive, end-to-end automated integration test suite for a critical marketing platform, providing 100\% test coverage for the marketing experiment lifecycle and significantly reducing regression risks across two separate deployment pipelines.}
+\resumeItem{Drove key process improvements for the engineering team's sprint and operational excellence cadences, resulting in sustained 80\%+ task completion rates and more efficient planning cycles.}
+      \resumeItemListEnd
+      
+  \resumeSubheading
+      {Audere, Seattle, WA}{}
+      {Software Engineer}{Aug 2022 -- Dec 2023}
+      \resumeItemListStart
+\resumeItem{Built serverless API components using AWS API Gateway and Lambda functions, supporting 10K+ daily requests with 99.9\% uptime across production environments.}
+\resumeItem{Developed 5+ REST endpoints with Python Lambda functions, handling data processing and API integration for 3 mobile applications.}
+\resumeItem{Contributed to Infrastructure as Code using Terraform, automating deployment of AWS resources across dev/staging/prod environments.}
+\resumeItem{Built automated database migration pipeline using Alembic, reducing schema deployment errors by 95\% and saving 15+ hours of manual database management per week.}
+\resumeItem{Integrated automated testing workflows into CircleCI pipelines, improving code quality and reducing manual testing overhead by 60\% across development cycles.}
+\resumeItem{Developed comprehensive Android test automation using Espresso framework, increasing test coverage from 45\% to 70\% and catching 85\% of bugs before production deployment.}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, JavaScript, TypeScript, C++, SQL, Bash} \\
+     \textbf{Database}{: MySQL, PostgreSQL, DynamoDB, RedShift} \\
+     \textbf{Technologies/Frameworks}{: AWS (Lambda, S3, EC2, DynamoDB, SNS, SQS), Spring Boot, Node.js, React, Hibernate, Flask, RESTful APIs, Microservices, Kubernetes, Docker} \\
+     \textbf{Developer Tools}{: Git, GitHub, GitLab, Jenkins, Terraform, AWS CDK, CloudFormation, Datadog, Splunk, IntelliJ} \\
+     \textbf{Testing \& CI/CD}{: JUnit, TestNG, Mockito, Cypress, Selenium, Appium, CircleCI, AWS CodePipeline, Docker, Kubernetes} \\
+    }}
+ \end{itemize}
+\vspace{-10pt}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Master of Science in Computer Science}{3.94/4.0}
+    {Arizona State University, Tempe, AZ}{Aug 2021 – May 2023}
+      
+      \resumeSubSubheading
+      {Relevant Coursework: }{Cloud Computing, Data Processing at Scale, Software Testing/Quality Management, Data Visualization}
+    \vspace{4pt}
+    \resumeSubheading
+    {Bachelor of Technology in Information Technology}{8.14/10}
+    {Dharmsinh Desai University, Nadiad, India}{Aug 2017 – May 2021}
+      \resumeSubSubheading
+      {Relevant Coursework: }{Data Structure and Algorithms, Databases, Advanced Java and Design Patterns, Distributed Computing}
+      \vspace{4pt}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+
+\end{document}
