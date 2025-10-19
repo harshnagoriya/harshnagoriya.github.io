@@ -99,7 +99,11 @@
             display: block;
         }
         .red { color: #d13212; font-weight: 500; }
+        .red a { color: #d13212; text-decoration: none; }
+        .red a:hover { text-decoration: underline; }
         .green { color: #037f0c; font-weight: 500; }
+        .green a { color: #037f0c; text-decoration: none; }
+        .green a:hover { text-decoration: underline; }
         .section { 
             margin: 20px 0 15px 0; 
             font-weight: 700;
@@ -171,12 +175,14 @@
                 // Process data locally
                 const following = [];
                 for (const relationship of followingData.relationships_following || []) {
-                    following.push(relationship.title);
+                    if (relationship.title) {
+                        following.push(relationship.title);
+                    }
                 }
                 
                 const followers = [];
-                for (const item of followersData) {
-                    if (item.string_list_data && item.string_list_data.length > 0) {
+                for (const item of followersData || []) {
+                    if (item.string_list_data && item.string_list_data.length > 0 && item.string_list_data[0].value) {
                         followers.push(item.string_list_data[0].value);
                     }
                 }
@@ -203,12 +209,12 @@
         function displayResult(data) {
             let html = `<div class="section red">Following but not followers (${data.summary.not_following_back}):</div>`;
             data.following_but_not_followers.forEach(user => {
-                html += `<div class="red">${user}</div>`;
+                html += `<div class="red"><a href="https://www.instagram.com/${user}" target="_blank">${user}</a></div>`;
             });
             
             html += `<div class="section green">Followers but not following (${data.summary.you_dont_follow_back}):</div>`;
             data.followers_but_not_following.forEach(user => {
-                html += `<div class="green">${user}</div>`;
+                html += `<div class="green"><a href="https://www.instagram.com/${user}" target="_blank">${user}</a></div>`;
             });
             
             const resultDiv = document.getElementById('result');
