@@ -171,17 +171,13 @@
                 // Process data locally
                 const following = [];
                 for (const relationship of followingData.relationships_following || []) {
-                    for (const item of relationship.string_list_data || []) {
-                        following.push(item.value);
-                    }
+                    following.push(relationship.title);
                 }
                 
                 const followers = [];
                 for (const item of followersData) {
-                    if (item.string_list_data) {
-                        for (const stringData of item.string_list_data) {
-                            followers.push(stringData.value);
-                        }
+                    if (item.string_list_data && item.string_list_data.length > 0) {
+                        followers.push(item.string_list_data[0].value);
                     }
                 }
                 
