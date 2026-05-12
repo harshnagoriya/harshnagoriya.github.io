@@ -1,6 +1,6 @@
 /* Amazon Prime Inspired Styles */
 :root {
-    --prime-blue: #00A8E1;
+    --prime-blue: #0095C8;
     --prime-dark-blue: #0073BB;
     --prime-black: #0F1419;
     --prime-dark-gray: #1A1A1A;
@@ -229,27 +229,21 @@ section {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
-    align-items: start;
 }
 
-.about-left {
-    text-align: left;
-}
-
-.about-left p {
+.about-content > p {
     font-size: 1.1rem;
     color: var(--prime-text-secondary);
     margin-bottom: 2rem;
     line-height: 1.7;
 }
 
-.about-right {
-    text-align: left;
+.about-highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
 }
 
 .skills-grid {
@@ -281,79 +275,77 @@ section {
 }
 
 /* Experience Section */
-.timeline {
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: var(--prime-blue);
-    transform: translateX(-50%);
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 3rem;
-}
-
-.timeline-marker {
-    position: absolute;
-    left: 50%;
-    width: 16px;
-    height: 16px;
-    background: var(--prime-blue);
-    border-radius: 50%;
-    transform: translateX(-50%);
-    border: 4px solid var(--prime-black);
-}
-
-.timeline-content {
+.experience-item {
     background: var(--prime-gray);
     padding: 2rem;
-    border-radius: 10px;
-    margin-left: calc(50% + 20px);
+    border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 3px solid var(--prime-blue);
 }
 
-.timeline-item:nth-child(even) .timeline-content {
-    margin-left: 0;
-    margin-right: calc(50% + 20px);
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 168, 225, 0.1);
 }
 
-.timeline-content h3 {
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-header h3 {
     color: var(--prime-white);
-    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
 }
 
-.timeline-content h4 {
-    color: var(--prime-white);
-    margin-bottom: 0.5rem;
-}
-
-.timeline-content h4 a {
+.experience-header h4 a {
     color: var(--prime-blue);
     text-decoration: none;
+    font-size: 1.1rem;
 }
 
-.timeline-content h4 a:visited {
-    color: var(--prime-blue);
-}
-
-.timeline-content h4 a:hover {
+.experience-header h4 a:hover {
     text-decoration: underline;
 }
 
-.timeline-date {
+.experience-header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.3rem;
+}
+
+.experience-date {
     color: var(--prime-accent);
     font-weight: 500;
     font-size: 0.9rem;
+}
+
+.experience-location {
+    color: var(--prime-text-secondary);
+    font-size: 0.85rem;
+}
+
+.experience-item ul {
+    color: var(--prime-text-secondary);
+    padding-left: 1.5rem;
+}
+
+.experience-item li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
 }
 
 /* Projects Section */
@@ -618,39 +610,51 @@ section {
     background: var(--prime-dark-gray);
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+.skills-categories {
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
 }
 
-.skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1.5rem;
+.skill-category-item {
     background: var(--prime-gray);
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
-.skill-item:hover {
-    border-color: var(--prime-blue);
-    transform: translateY(-5px);
-}
-
-.skill-item i {
-    font-size: 2.5rem;
+.skill-category-item h3 {
     color: var(--prime-blue);
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    min-width: 140px;
+    padding-top: 0.3rem;
+    flex-shrink: 0;
 }
 
-.skill-item h3 {
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    background: var(--prime-black);
+    color: var(--prime-text-secondary);
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(0, 149, 200, 0.3);
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    border-color: var(--prime-blue);
     color: var(--prime-white);
-    font-size: 1rem;
-    margin: 0;
 }
 
 /* Education Section */
@@ -1020,30 +1024,21 @@ section {
         flex-wrap: wrap;
     }
     
-    .timeline::before {
-        left: 20px;
+    .experience-header {
+        flex-direction: column;
     }
-    
-    .timeline-marker {
-        left: 20px;
-    }
-    
-    .timeline-content {
-        margin-left: 50px;
-        margin-right: 0;
-    }
-    
-    .timeline-item:nth-child(even) .timeline-content {
-        margin-left: 50px;
-        margin-right: 0;
+
+    .experience-header-right {
+        align-items: flex-start;
     }
     
     .projects-grid {
         grid-template-columns: 1fr;
     }
     
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    .skills-categories .skill-category-item {
+        flex-direction: column;
+        gap: 0.75rem;
     }
     
     .education-grid {
@@ -1075,23 +1070,8 @@ section {
         grid-template-columns: 1fr;
     }
     
-    .about-content {
+    .about-highlights {
         grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .about-left,
-    .about-right {
-        text-align: center;
-    }
-    
-    .about-details {
-        text-align: center;
-    }
-    
-    .detail-row {
-        flex-direction: column;
-        gap: 1rem;
     }
 }
 

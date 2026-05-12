@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe elements for animation
-    const animateElements = document.querySelectorAll('.project-card, .timeline-item, .skill-category');
+    const animateElements = document.querySelectorAll('.experience-item, .project-item, .skill-category-item, .paper-item, .education-card');
     
     animateElements.forEach(el => {
         el.style.opacity = '0';
@@ -61,25 +61,14 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Add hover effects to project cards
-    const projectCards = document.querySelectorAll('.project-card');
-    
-    projectCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-10px) scale(1.02)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
-    });
 
-    // Mobile hamburger menu
     const hamburger = document.querySelector('.hamburger');
     const navCenter = document.querySelector('.nav-center');
     
     if (hamburger && navCenter) {
         hamburger.addEventListener('click', function() {
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', String(!expanded));
             this.classList.toggle('active');
             navCenter.classList.toggle('active');
         });
@@ -88,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
                 navCenter.classList.remove('active');
             });
         });
@@ -113,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Simple typing animation for subtitle
     const typedElement = document.querySelector('.typed-text');
     if (typedElement) {
-        const texts = ['Software Development Engineer', 'Cloud Engineer', 'Java Developer', 'Backend Engineer'];
+        const texts = ['Backend Engineer', 'Distributed Systems Engineer', 'Cloud-Native Engineer', 'Software Engineer'];
         let textIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
