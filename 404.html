@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Page Not Found | Harsh Nagoriya</title>
+  <meta
+    name="description"
+    content="The requested page could not be found on Harsh Nagoriya's portfolio website."
+  >
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#232f3e">
+
+  <link rel="icon" type="image/png" href="/assets/img/photo_for_icon.png">
+  <link rel="apple-touch-icon" href="/assets/img/photo_for_icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="/assets/css/prime-style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700&display=swap"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  >
+
+  <style>
+    /* Only the 404-specific presentation is defined here.
+       The rest of the page uses the same classes as index.html. */
+
+    .logo {
+      text-decoration: none;
+    }
+
+    .hamburger {
+      background: transparent;
+      border: 0;
+    }
+
+    .error-hero {
+      min-height: calc(100vh - 89px);
+    }
+
+    .error-title {
+      font-size: clamp(2.75rem, 6vw, 4.5rem);
+    }
+
+    .error-subtitle {
+      max-width: 580px;
+      line-height: 1.7;
+    }
+
+    .error-visual {
+      display: flex;
+      justify-content: center;
+    }
+
+    .error-profile-card {
+      width: min(350px, 100%);
+      text-align: center;
+      flex-direction: column;
+      gap: 0.75rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .error-code {
+      margin: 0;
+      color: var(--prime-blue);
+      font-size: clamp(6rem, 15vw, 9rem);
+      font-weight: 700;
+      line-height: 0.9;
+      letter-spacing: -0.06em;
+    }
+
+    .error-marker {
+      color: var(--prime-text-secondary);
+      font-size: 1rem;
+      letter-spacing: 0.04em;
+    }
+
+    .error-marker i {
+      margin-right: 0.45rem;
+      color: var(--prime-accent);
+    }
+
+    @media (max-width: 768px) {
+      .error-hero {
+        min-height: 100vh;
+      }
+
+      .error-title {
+        font-size: clamp(2.4rem, 11vw, 3.5rem);
+      }
+
+      .error-subtitle {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Same navigation structure used on the homepage -->
+  <header class="prime-header">
+    <nav class="prime-nav" aria-label="Primary navigation">
+      <div class="nav-left">
+        <a class="logo" href="/" aria-label="Harsh Nagoriya homepage">
+          <span class="logo-text">Harsh</span>
+          <span class="logo-accent">Nagoriya</span>
+        </a>
+      </div>
+
+      <div class="nav-center">
+        <ul class="nav-menu">
+          <li><a href="/#home">Home</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#experience">Experience</a></li>
+          <li><a href="/#skills">Skills</a></li>
+          <li><a href="/#education">Education</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#papers">Papers</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <a
+          href="/assets/Harsh_Resume.pdf"
+          class="prime-btn primary"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open résumé in a new tab"
+        >
+          Résumé ↗
+        </a>
+      </div>
+
+      <button
+        class="hamburger"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Reuses the homepage's two-column hero composition -->
+    <section class="hero-section error-hero" aria-labelledby="error-title">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title error-title" id="error-title">
+            <span class="title-line">
+              <span class="name-first">Harsh might be out</span>
+            </span>
+            <span class="title-line">
+              <span class="name-last">chasing waterfalls.</span>
+            </span>
+          </h1>
+
+          <p class="hero-subtitle error-subtitle">
+            This page seems to have wandered off on a Washington trail.
+            Return to the portfolio before the rain rolls in.
+          </p>
+
+          <div class="hero-actions">
+            <a href="/" class="prime-btn primary">Return Home</a>
+            <a href="/#projects" class="prime-btn secondary">View Projects</a>
+          </div>
+        </div>
+
+        <div class="hero-image error-visual" aria-hidden="true">
+          <div class="profile-card error-profile-card">
+            <p class="error-code">404</p>
+            <p class="error-marker">
+              <i class="fas fa-map-marker-alt"></i>
+              Trail not found
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Same footer used on the homepage -->
+  <footer class="prime-footer">
+    <div class="container">
+      <p>&copy; 2026 Harsh Nagoriya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/prime-script.js" defer></script>
+</body>
+</html>
