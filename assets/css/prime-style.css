@@ -875,6 +875,11 @@ section {
     text-decoration: underline;
 }
 
+.paper-status.preprint {
+    border: 1px solid var(--prime-text-secondary);
+    color: var(--prime-text-secondary);
+}
+
 /* Contact Section */
 .contact-content {
     text-align: center;
