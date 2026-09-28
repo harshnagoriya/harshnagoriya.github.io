@@ -320,6 +320,14 @@ section {
     text-decoration: underline;
 }
 
+.experience-summary {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    color: var(--prime-text-secondary);
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
 .experience-header-right {
     display: flex;
     flex-direction: column;
